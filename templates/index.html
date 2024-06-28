@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div>
+        {% if client.has_login %}
+            <h1>Welcome, {{client.name}}!</h1>
+        {% else %}
+            <h1>Welcome, Stranger!</h1>
+        {% endif %}
+    </div>
+</body>
+</html>
